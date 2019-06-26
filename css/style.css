@@ -71,7 +71,7 @@ video{width: 100%;min-height: 100%}
 
 
 @media (max-width: 1024px) {
-    .section1 .col-xl-6 #hori {
+   /* .section1 .col-xl-6 #hori {
         left: 0;
         top: 0;
         height: 100%;
@@ -97,14 +97,20 @@ video{width: 100%;min-height: 100%}
 
 
     }
-    #heart{display: block ;}
+    #heart{display: block ;}*/
+    .section1 .col-xl-6 #hori {
+        top: 50%;
+
+
+    }
     .section4 .col-md-6 div{padding: 20px}
 
 }
-@media (max-width: 768px) {
+
+@media (max-width: 991px) {
     .section1 .col-xl-6 #hori {
-        left: 0;
-        top: 0;
+        left: 50px;
+        top: -200px;
         height: 100%;
         position: relative;
 
@@ -113,7 +119,7 @@ video{width: 100%;min-height: 100%}
     .section1 .col-xl-6 #hori2{
         position: relative;
         right: 0;
-        top: 0;
+        top: 200px;
         height: 100%;
         transform: translateY(0);
 
@@ -134,4 +140,58 @@ video{width: 100%;min-height: 100%}
     .margin-row{margin-bottom: 0}
     .section4 .col-md-6 div{padding: 10px}
 
+}
+@media (max-width: 768px) {
+    .section1 .col-xl-6 #hori {
+        left: 50px;
+        top: -120px;
+        height: 100%;
+        position: relative;
+
+        transform: translateY(0);
+    }
+    .section1 .col-xl-6 #hori2{
+        position: relative;
+        right: 0;
+        top: 120px;
+        height: 100%;
+        transform: translateY(0);
+
+    }
+    .section1 .col-xl-6 #hori svg{
+        transform: rotate(90deg) ;
+        height: 100%;
+    }
+    .section1 .col-xl-6 #hori2 svg{
+        transform: rotate(90deg) ;
+        height: 100%;
+
+
+    }
+    #heart{display: block ;font-size: 3rem !important}
+    h2{font-size: 3rem}
+    .section5 .col-sm-12{margin-bottom: 15px}
+    .margin-row{margin-bottom: 0}
+    .section4 .col-md-6 div{padding: 10px}
+
+}
+
+
+@media (max-width: 576px) {
+    .section1 .col-xl-6 #hori {
+        left: 50px;
+        top: -30px;
+        height: 100%;
+        position: relative;
+
+        transform: translateY(0);
+    }
+    .section1 .col-xl-6 #hori2{
+        position: relative;
+
+        top: 30px;
+        height: 100%;
+        transform: translateY(0);
+
+    }
 }

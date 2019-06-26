@@ -47,21 +47,21 @@
                });
                },500);
                $('#heart').fadeIn(1000);
+               if ($(window).width()>991) {
+                   $horizontal.css({
+                       'left': '0',
+                       'transition': '500ms all',
 
-            $horizontal.css({
-                'left': '0',
-                'transition': '500ms all',
-
-            });
+                   });
+               }
 
 
-
-
-            $horizontal2.css({
-                'right': '0',
-                'transition': '500ms all',
-            });
-
+               if ($(window).width()>991) {
+                   $horizontal2.css({
+                       'right': '0',
+                       'transition': '500ms all',
+                   });
+               }
         });
 
 
